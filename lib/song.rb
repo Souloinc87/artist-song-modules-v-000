@@ -5,13 +5,9 @@ class Song
   include Memorable::InstanceMethods
   extend Findable
   include Paramable
-  attr_accessor :name, :artist 
+  attr_accessor :name, :artist
 
   @@songs = []
-
-  def artist=(artist)
-    @artist = artist
-  end
 
   def self.all
     @@songs
